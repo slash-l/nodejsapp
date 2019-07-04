@@ -10,7 +10,9 @@
     "startbkgd": "nohup node app.js &",
     "refreshdb": "cd config && node model.js",
     "build_webpack": "webpack",
-    "build_gulp": "gulp"
+    "build_gulp": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "shenqingling <sql370@qq.com>",
@@ -21,7 +23,8 @@
     "express": "^4.15.3",
     "mysql": "^2.13.0",
     "sequelize": "^3.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -30,5 +33,6 @@
     "grunt": "^1.0.1",
     "gulp": "^3.9.1",
     "webpack": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
